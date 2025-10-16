@@ -39,7 +39,7 @@ export async function POST(request) {
         const response = await imageKit.upload({
             file: buffer,
             fileName: image.name,
-            folder: "logos"
+            folder: "store_logos"
         })
         const optimizedImage = imageKit.url({
             path: response.filePath,
